@@ -77,7 +77,11 @@ Run **Kernel → Restart Kernel and Run All Cells**. The notebook imports the sh
 - `PROTOTYPE_DEMO.md` — short faculty demonstration guide.
 - `requirements.txt` — runtime and notebook dependencies.
 
-## Validation and deployment status
+## Live dashboard and validation
 
-The Streamlit app can download the dataset from UCI when the CSV is absent, so the repository can be deployed without a copy of the data file. The hosted URL will be added here only after deployment and a live-page check succeed.
+**Public dashboard:** [Open the Bank Marketing Campaign Analysis app](https://bank-marketing-da-014-u3pnizm4t9g6wk8tpelvfg.streamlit.app/)
+
+The deployed app was opened and verified after its first run. It loaded all 41,188 records, displayed 4,640 successful responses and an 11.27% overall response rate, and rendered the segment, contact-frequency, channel, month, and weekday charts. The methodology and findings pages loaded, and a category filter changed the findings before being restored to its default selection.
+
+The app fetches the official UCI CSV when it is absent from the repository. The local ZIP includes the CSV so it can also run without downloading it again.
 
